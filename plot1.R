@@ -1,0 +1,5 @@
+library(datasets)
+source("load_data_by_date.R")
+png(file="plot1.png", width=480, height=480, units="px", bg ="transparent")
+with(power_df,hist(Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red"))
+dev.off()
